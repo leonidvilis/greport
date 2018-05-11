@@ -7,14 +7,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="GetReport.exe.manifest" size="7029">
+    <dependentAssembly dependencyType="install" codebase="GetReport.exe.manifest" size="6831">
       <assemblyIdentity name="GetReport.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iqO03oNw43VVvTyhYfbqQ9qpPnAGRisD7XXCt8bliyQ=</dsig:DigestValue>
+        <dsig:DigestValue>ABsRfCeCS9WfbqY5fAQPnwpTrQBTHj/6dCI3g0268Ms=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

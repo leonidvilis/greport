@@ -18,3 +18,7 @@ I:\ПРОЕКТЫ\C#\GetReportCB\GetReport\GetReport.BL\bin\Debug\PersonHierarch
 I:\ПРОЕКТЫ\C#\GetReportCB\GetReport\GetReport.BL\obj\Debug\GetReport.BL.csprojResolveAssemblyReference.cache
 I:\ПРОЕКТЫ\C#\GetReportCB\GetReport\GetReport.BL\obj\Debug\GetReport.BL.dll
 I:\ПРОЕКТЫ\C#\GetReportCB\GetReport\GetReport.BL\obj\Debug\GetReport.BL.pdb
+E:\greport\GetReport.BL\obj\Debug\GetReport.BL.csprojAssemblyReference.cache
+E:\greport\GetReport.BL\obj\Debug\GetReport.BL.csproj.CoreCompileInputs.cache
+E:\greport\GetReport.BL\obj\Debug\GetReport.BL.dll
+E:\greport\GetReport.BL\obj\Debug\GetReport.BL.pdb

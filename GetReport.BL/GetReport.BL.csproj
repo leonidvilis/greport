@@ -30,10 +30,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ConstructionHierarchy">
+      <HintPath>..\GetReport\GetReport\bin\Release\ConstructionHierarchy.dll</HintPath>
+    </Reference>
+    <Reference Include="DocsHierarchy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GetReport\GetReport\bin\Release\DocsHierarchy.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="PersonHierarchy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GetReport\GetReport\bin\Release\PersonHierarchy.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,20 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\ConstructionControl\ConstructionControl\ConstructionHierarchy\ConstructionHierarchy.csproj">
-      <Project>{83fc9475-3afe-4306-9df5-feb6a5991433}</Project>
-      <Name>ConstructionHierarchy</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\ConstructionControl\ConstructionControl\DocsHirarchy\DocsHierarchy.csproj">
-      <Project>{e2e9b3aa-5d13-470e-8d70-1376662b0e69}</Project>
-      <Name>DocsHierarchy</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\ConstructionControl\ConstructionControl\PersonHierarchy\PersonHierarchy.csproj">
-      <Project>{7445386a-0a32-4e42-a47b-fb54947ac8f5}</Project>
-      <Name>PersonHierarchy</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

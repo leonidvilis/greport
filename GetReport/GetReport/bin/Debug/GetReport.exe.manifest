@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Digg_Icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="GetReport" version="0.1.6385.41528" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="GetReport" version="0.1.6705.23883" language="neutral" processorArchitecture="msil" />
     <commandLine file="GetReport.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -15,16 +15,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          Параметры манифеста UAC
-          При необходимости изменить уровень контроля учетных записей Windows замените узел 
-          requestedExecutionLevel одним из следующих значений.
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         Если вы хотите использовать виртуализацию файлов и реестра для обратной 
-         совместимости, удалите узел requestedExecutionLevel.
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -48,38 +48,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ConstructionHierarchy.dll" size="5632">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ConstructionHierarchy.dll" size="5120">
       <assemblyIdentity name="ConstructionHierarchy" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>e1LowotObLIDpyMqNbtfbLHtZTWRs9VWXurtfW9M4mc=</dsig:DigestValue>
+        <dsig:DigestValue>KIctvfa5Izgp8wGpOaqOKo1VGqGEQ/XlEdQTVkuXCSg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DocsHierarchy.dll" size="9728">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DocsHierarchy.dll" size="9216">
       <assemblyIdentity name="DocsHierarchy" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WMGnYjtSAle54ToEzg2XmcdvVbYZowqSkAxQ0/ASNPI=</dsig:DigestValue>
+        <dsig:DigestValue>euKOdobbCbiGpH7Do5KjtCMJ8KF7bz5weknVLvGZ0Vo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GetReport.exe" size="230880">
-      <assemblyIdentity name="GetReport" version="0.1.6385.41528" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GetReport.exe" size="229888">
+      <assemblyIdentity name="GetReport" version="0.1.6705.23883" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ckj+Ku27ghzOZndGzCJNoKSa0lOreMstfKQ62ty5Hk4=</dsig:DigestValue>
+        <dsig:DigestValue>mNpZjE08nI24fTqBMiLajhLYytbTV51++7FS8dOrcps=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -103,7 +103,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vnvqABOLCr9Gj65xCBo/LxPeuT1UZ81fDa5up7vfEHc=</dsig:DigestValue>
+        <dsig:DigestValue>tpDgg3UpYhL/E2wHCa1iAp7T8MbFKQujBhAfHyEmVqc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
