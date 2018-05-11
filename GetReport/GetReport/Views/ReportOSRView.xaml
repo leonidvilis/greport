@@ -1,0 +1,278 @@
+﻿<UserControl
+    x:Class="GetReport.Views.ReportOSRView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:GetReport.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    mc:Ignorable="d">
+
+    <Control.Resources>
+        <DataTemplate x:Key="ComboBoxTmp">
+            <StackPanel Orientation="Horizontal">
+                <TextBox IsEnabled="False" Text="{Binding Path=FirstName}" />
+                <TextBox IsEnabled="False" Text="{Binding Path=LastName}" />
+                <TextBox IsEnabled="False" Text="{Binding Path=Post}" />
+            </StackPanel>
+        </DataTemplate>
+    </Control.Resources>
+    <StackPanel
+        x:Name="st1"
+        VerticalAlignment="Top"
+        Orientation="Vertical">
+        <Expander
+            x:Name="Exp1"
+            Header="Наименование объекта и реквизиты сторон:"
+            IsExpanded="{Binding ElementName=Expand1, Path=IsChecked}">
+            <StackPanel>
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Объект капитального строительства"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="nameAndAddressOfObject"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=NameAndAddressOfObject, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Застройщик или технический заказчик"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="requisitesOfConsumer"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=RequisitesOfConsumer, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Лицо, осуществляющее строительство"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="requisitesOfPrimeContractor"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=RequisitesOfPrimeContractor, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Лицо, осуществляющее подготовку проекта"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="requisitesOfProjectDeveloper"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=RequisitesOfProjectDeveloper, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Лицо, выполнившее работы"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="requisitesOfBuilder"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=RequisitesOfBuilder, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+            </StackPanel>
+        </Expander>
+        <TextBlock
+            MaxWidth="290"
+            Text="Номер акта"
+            TextWrapping="Wrap" />
+        <TextBox x:Name="numberOfReport" Text="{Binding Path=NumberOfReport, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        <TextBlock
+            MaxWidth="290"
+            Text="Дата подписания акта"
+            TextWrapping="Wrap" />
+        <DatePicker x:Name="dateOfPreparationOfReport" Text="{Binding Path=DateOfPreparationOfReport, Mode=TwoWay}" />
+        <Expander
+            x:Name="Exp2"
+            Header="Представители сторон"
+            IsExpanded="{Binding ElementName=Expand2, Path=IsChecked}">
+            <StackPanel x:Name="st2">
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Представитель застройщика или техзаказчика"
+                    TextWrapping="Wrap" />
+                <ComboBox
+                    x:Name="delegateOfConsumer"
+                    Margin="1"
+                    ItemTemplate="{StaticResource ComboBoxTmp}"
+                    ItemsSource="{Binding session.ListOfMember}"
+                    SelectedItem="{Binding DelegateOfConsumer, Mode=TwoWay}" />
+
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Представитель лица, осуществляющего строительство"
+                    TextWrapping="Wrap" />
+                <ComboBox
+                    x:Name="delegateOfPrimeContractor"
+                    Margin="1,1"
+                    ItemTemplate="{StaticResource ComboBoxTmp}"
+                    SelectedItem="{Binding Path=DelegateOfPrimeContractor, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Представитель лица, осуществляющего строительство по вопросам строительного контроля"
+                    TextWrapping="Wrap" />
+                <ComboBox
+                    x:Name="delegateOfBuildControlPrimeContractor"
+                    Margin="1,1"
+                    ItemTemplate="{StaticResource ComboBoxTmp}"
+                    SelectedItem="{Binding Path=DelegateOfBuildControlPrimeContractor, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Представитель лица, осуществляющего подготовку проектной документации"
+                    TextWrapping="Wrap" />
+                <ComboBox
+                    x:Name="delegateOfProjectDeveloper"
+                    Margin="1,1"
+                    SelectedItem="{Binding Path=DelegateOfProjectDeveloper, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Представитель лица, выполнившего работы, подлежащие освидетельствованию"
+                    TextWrapping="Wrap" />
+                <ComboBox
+                    x:Name="delegateOfBuilder"
+                    Margin="1,1"
+                    ItemTemplate="{StaticResource ComboBoxTmp}"
+                    SelectedItem="{Binding Path=DelegateOfBuilder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Иные представители лиц"
+                    TextWrapping="Wrap" />
+                <ComboBox
+                    x:Name="delegateOfOtherCompany"
+                    Margin="1,1"
+                    ItemTemplate="{StaticResource ComboBoxTmp}"
+                    SelectedItem="{Binding Path=DelegateOfOtherCompany, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Иные представители лиц 2"
+                    TextWrapping="Wrap" />
+                <ComboBox
+                    x:Name="delegateOfOtherCompany2"
+                    Margin="1,1"
+                    ItemTemplate="{StaticResource ComboBoxTmp}"
+                    SelectedItem="{Binding Path=DelegateOfOtherCompany2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Иные представители лиц 3"
+                    TextWrapping="Wrap" />
+                <ComboBox
+                    x:Name="delegateOfOtherCompany3"
+                    Margin="1,1"
+                    ItemTemplate="{StaticResource ComboBoxTmp}"
+                    SelectedItem="{Binding Path=DelegateOfOtherCompany3, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </StackPanel>
+        </Expander>
+        <Expander
+            x:Name="Exp3"
+            Header="Основные данные"
+            IsExpanded="{Binding ElementName=Expand3, Path=IsChecked}">
+            <StackPanel>
+                <TextBlock
+                    MaxWidth="290"
+                    Text="К освидетельствованию предъявлены следующие работы"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="workName"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=WorkName, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Работы выполнены в соответствии с разделами проектной документации"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="projectTheWorkIncluded"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=ProjectTheWorkIncluded, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="При выполнении работ применены"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="TheListOfMaterial"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=TheListOfMaterial, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Предъявлены документы, подтверждающие соответствие работ предъявляемым к ним требованиям"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="TheListOfQuantityConsistDocs"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=TheListOfQuantityConsistDocs, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Дата начала работ"
+                    TextWrapping="Wrap" />
+                <DatePicker
+                    x:Name="dateOfWorkStart"
+                    MaxWidth="290"
+                    Text="{Binding Path=TheDateOfWorkStart, Mode=TwoWay}" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Дата окончания работ"
+                    TextWrapping="Wrap" />
+                <DatePicker
+                    x:Name="dateOfWorkEnding"
+                    MaxWidth="290"
+                    Text="{Binding Path=TheDateOfWorkEnding, Mode=TwoWay}" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Работы выполнены в соответствии"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="listOfDocumentConsists"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=TheListOfDocumentConsists, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+                <Label MaxWidth="290" Content="Разрешается производство последующих работ" />
+                <TextBox
+                    x:Name="nextWorkIsAccepted"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=TheNextWorkIsAccepted, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+                <TextBlock
+                    MaxWidth="290"
+                    Text="Приложения"
+                    TextWrapping="Wrap" />
+                <TextBox
+                    x:Name="annexes"
+                    MaxWidth="290"
+                    Margin="1,1"
+                    Text="{Binding Path=Annexes, Mode=TwoWay}"
+                    TextWrapping="Wrap"
+                    VerticalScrollBarVisibility="Auto" />
+            </StackPanel>
+        </Expander>
+    </StackPanel>
+</UserControl>

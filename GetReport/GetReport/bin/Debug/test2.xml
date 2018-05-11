@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<ArrayOfReportOSR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ReportOSR>
+    <TypeOfReport>AOSR</TypeOfReport>
+    <NameAndAddressOfObject>Здание Центра обработки данных (ЦОД) ПАО «Сбербанк России» на территории инновационного центра «Сколково», расположенного на земельном участке с кадастровым номером 77:15:0020321:21, местоположение: г. Москва, Одинцовский район, городское поселение Новоивановское, в районе р.п. Новоивановское, в районе д.Сколково, д. Марфино»</NameAndAddressOfObject>
+    <RequisitesOfConsumer>ООО "СБ ДЕВЕЛОПМЕНТ", ОГРН 1167746498920, ИНН 7722365099, СРО № 0310.01-2016-7722365099-П-29 от 9.06.2016 НП «СРО «ЦЕНТРСТРОЙПРОЕКТ» 105005, город Москва, улица Бауманская, дом 11, строение 8, +7(495) 640-79-27</RequisitesOfConsumer>
+    <RequisitesOfPrimeContractor>ЗАО «ИНСИСТЕМС» ОГРН № 1037739391260, ИНН 7701135062, СРО № 0042.13-2009-7701135062-С-069 от 10.08.2016 г.  выдано Союз "ИСЗС-Монтаж", 129075, г. Москва, Мурманский проезд, д.14, стр.1, +7 (495) 967-66-75/+7 (495)721-91-58)</RequisitesOfPrimeContractor>
+    <RequisitesOfBuilder>ООО «МСМ», ИНН 9701019430, ОГРН № 5157746037763, СРО № 0946.01-2015-9701019430-С-227 от 14.12.2015 г., выдано СО Ассоциация строительных организаций "Поддержки организаций строительной отрасли", г. Москва, проезд Мясницкий, дом 4, строение 1, тел. (факс) 89153677095</RequisitesOfBuilder>
+    <DelegateOfConsumer>
+      <FirstName>Виктор</FirstName>
+      <LastName>Старшинов</LastName>
+      <Patronymic>Анатольевич</Patronymic>
+      <Post>Начальник отдела технического надзора</Post>
+      <Company>ООО "СБ Девелопмент"</Company>
+      <Order>Приказ № СБД/СКО/Ц-4 от 15.07.2016.</Order>
+    </DelegateOfConsumer>
+    <DelegateOfPrimeContractor>
+      <FirstName>Александр</FirstName>
+      <LastName>Дедов</LastName>
+      <Patronymic>Валентинович</Patronymic>
+      <Post>Начальник участка</Post>
+      <Company>ЗАО "Инсистемс"</Company>
+      <Order>Приказ № 294 от 13.04.2016.</Order>
+    </DelegateOfPrimeContractor>
+    <DelegateOfBuildControlPrimeContractor>
+      <FirstName>Артем</FirstName>
+      <LastName>Капитонов</LastName>
+      <Patronymic>Михайлович</Patronymic>
+      <Post>Заместитель начальника участка</Post>
+      <Company>ЗАО "Инсистемс"</Company>
+      <Order>Приказ № 294 от 13.04.2016.</Order>
+    </DelegateOfBuildControlPrimeContractor>
+    <DelegateOfBuilder>
+      <FirstName>Абдурахман</FirstName>
+      <LastName>Абдулаев</LastName>
+      <Patronymic>С</Patronymic>
+      <Post>Руководитель проекта</Post>
+      <Company>ООО "МСМ"</Company>
+      <Order>Приказ №0003/160516/2/1 от 16.05.2016.</Order>
+    </DelegateOfBuilder>
+    <DelegateOfOtherCompany>
+      <FirstName>Зураб</FirstName>
+      <LastName>Перадзе</LastName>
+      <Patronymic>Григорьевич</Patronymic>
+      <Post>Начальник участка</Post>
+      <Company>ООО "ЖИЛТЕХСТРОЙ"</Company>
+      <Order>Приказ № 3 от 17.05.2016.</Order>
+    </DelegateOfOtherCompany>
+    <DateOfPreparationOfReport>2017-05-04T00:00:00</DateOfPreparationOfReport>
+    <NumberOfReport>936/ТМ1/КЖ/ЛА/Км-Лм/4м-7м/ +0,400 - +25,750</NumberOfReport>
+    <WorkName>Армирование и устройство опалубки лестничных маршей и площадок лестнично-лифтовой шахты Л3, технологический модуль 1, в осях Км-Лм/4м-7м от +0.400 до +25.750, корпус 1.</WorkName>
+    <ProjectTheWorkIncluded>ЗАО «ИНСИСТЕМС» СК-2-Р-К1-КЖ2.1-К лист 1,                 ООО «Кронта Констракшен» СК-2-Р-К1-КЖ2.1 листы 38, 39, 62, 63, 64</ProjectTheWorkIncluded>
+    <TheListOfMaterial>Сетка сварная 4С 5Вр-I-100/5Вр-I-100: Паспорт № 530356П; Арматура ø6А240: с/к №11381; Арматура ø8А500С: с/к №2000026805, Арматура ø12А500С: с/к №6771</TheListOfMaterial>
+    <TheDateOfWorkStart>2017-06-19T22:57:27.3161256+03:00</TheDateOfWorkStart>
+    <TheDateOfWorkEnding>2017-05-04T00:00:00</TheDateOfWorkEnding>
+    <TheListOfDocumentConsists>СК-2-Р-К1-КЖ2.1-К, СК-2-Р-К1-КЖ2.1, СП70.13330.2012</TheListOfDocumentConsists>
+  </ReportOSR>
+</ArrayOfReportOSR>
